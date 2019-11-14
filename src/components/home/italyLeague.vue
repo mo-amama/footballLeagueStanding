@@ -70,7 +70,7 @@ export default {
             'position': '2',
             "team": {
                         "id": 674,
-                        "name": "Juvebtus",
+                        "name": "Juventus",
                         "crestURI": null
                     },
                     "playedGames": 34,
