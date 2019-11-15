@@ -1,0 +1,82 @@
+ [
+    {
+      "position": "1",
+      "team": {
+        "id": 674,
+        "name": "PSV",
+        "crestURI": null
+      },
+      "playedGames": 34,
+      "won": 26,
+      "draw": 5,
+      "lost": 3,
+      "points": 83,
+      "goalsFor": 87,
+      "goalsAgainst": 39,
+      "goalDifference": 48
+    },
+    {
+      "position": "2",
+      "team": {
+        "id": 674,
+        "name": "AJAX",
+        "crestURI": null
+      },
+      "playedGames": 34,
+      "won": 26,
+      "draw": 5,
+      "lost": 3,
+      "points": 83,
+      "goalsFor": 87,
+      "goalsAgainst": 39,
+      "goalDifference": 48
+    },
+    {
+      "position": 3,
+      "team": {
+        "id": 682,
+        "name": "AZ",
+        "crestURI": null
+      },
+      "playedGames": 34,
+      "won": 22,
+      "draw": 5,
+      "lost": 7,
+      "points": 71,
+      "goalsFor": 72,
+      "goalsAgainst": 38,
+      "goalDifference": 34
+    },
+    {
+      "position": 4,
+      "team": {
+        "id": 682,
+        "name": "Fc Twente",
+        "crestURI": null
+      },
+      "playedGames": 34,
+      "won": 22,
+      "draw": 5,
+      "lost": 7,
+      "points": 71,
+      "goalsFor": 72,
+      "goalsAgainst": 38,
+      "goalDifference": 34
+    },
+    {
+      "position": 5,
+      "team": {
+        "id": 682,
+        "name": "Feyenord",
+        "crestURI": null
+      },
+      "playedGames": 34,
+      "won": 22,
+      "draw": 5,
+      "lost": 7,
+      "points": 71,
+      "goalsFor": 72,
+      "goalsAgainst": 38,
+      "goalDifference": 34
+    }
+  ]

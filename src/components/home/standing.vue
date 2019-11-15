@@ -9,9 +9,9 @@
                 </p>
                 <v-divider></v-divider>
             </v-flex>
-            <v-row class="mt-5">
+            <div class="mt-5">
                 <p class="ma-0 google-font"  style="text-transform: capitalize; font-size:170% ;color:brown">Select League</p>
-            </v-row>
+            </div>
         </v-layout>
 
          <v-layout wrap align-center justify-center row fill-height class="mt-5 ml-5">
@@ -35,22 +35,32 @@
             <div class="subheading google-font brown--text">English Premier league</div>
           </v-card-text>  
         </v-card>
-        <v-dialog
+            </v-flex>
+             <v-dialog
          v-model="dialog"
          max-width="900"
         >
          <EnglishLeague />
          </v-dialog>
-            </v-flex>
-      <v-flex xs12 sm6 md6 class="" >    
+
+
+
+
+
+
+
+
+        
+<v-flex xs12 sm6 md6 class="" >    
            <v-card class="text-xs-center ma-3 mx-auto" max-width="380" height=370 
-             @click.stop="dialog = true"
+            
             >
           <v-responsive class="pt-4">
             <v-avatar size="300" class="grey lighten-2" tile>
               <v-img 
               :src="require('@/assets/img/serie.png')"
               :lazy-src="require('@/assets/img/serie.png')"
+               @click.stop="dialog = true"
               >
                 <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
                   <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
@@ -62,22 +72,25 @@
             <div class="subheading google-font brown--text">Series A league</div>
           </v-card-text>  
         </v-card>
-        <v-dialog
+            </v-flex>
+              <v-dialog
          v-model="dialog"
          max-width="900"
         >
          <ItalyLeague />
          </v-dialog>
-            </v-flex>
+         
+      
       <v-flex xs12 sm6 md6 class="mt-3" >    
            <v-card class="text-xs-center ma-3 mx-auto" max-width="380" height=370 
-             @click.stop="dialog = true"
+            
             >
           <v-responsive class="pt-4">
             <v-avatar size="300" class="grey lighten-2" tile>
               <v-img 
               :src="require('@/assets/img/logo-eredivisie.jpg')"
               :lazy-src="require('@/assets/img/logo-eredivisie.jpg')"
+               @click.stop="dialog = true"
               >
                 <v-layout slot="placeholder" fill-height align-center justify-center ma-0>
                   <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
@@ -89,14 +102,14 @@
             <div class="subheading google-font brown--text">Eredivisie league</div>
           </v-card-text>  
         </v-card>
-        <v-dialog
+       
+            </v-flex>
+  <v-dialog
          v-model="dialog"
          max-width="900"
         >
          <DutchLeague />
          </v-dialog>
-            </v-flex>
-
 
           <v-flex xs12 sm6 md6 class="mt-3" >    
            <v-card class="text-xs-center ma-3 mx-auto" max-width="380" height=370 
@@ -118,23 +131,22 @@
             <div class="subheading google-font brown--text">French Ligue 1 league</div>
           </v-card-text>  
         </v-card>
-        <v-dialog
+        
+            </v-flex> 
+            <v-dialog
          v-model="dialog"
          max-width="900"
         >
-         <FrenchLeague />
+        <FrenchLeague />
          </v-dialog>
-            </v-flex> 
-
-
          </v-layout>
+         
     </v-container>
 </template>
 
 <script>
 import EnglishLeague from '@/components/home/englishLeague'
 import DutchLeague from '@/components/home/dutchLeague'
-
 import FrenchLeague from '@/components/home/frenchLeague'
 import ItalyLeague from '@/components/home/italyLeague'
 

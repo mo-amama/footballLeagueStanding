@@ -1,9 +1,9 @@
 <template>
 <v-content>
-  <v-row justify="center">
+  
       <v-card>
         <v-card-title class="headline" style="background-color:brown; color:white; text-align:center">French League</v-card-title>
-            <v-simple-table class="table">
+            <table class="table">
                 <template>
                   <thead>
                     <tr>
@@ -20,7 +20,7 @@
                     </tr>
                   </thead>
                   <tbody class="tbody">
-                    <tr v-for="item in table" :key="item.name">
+                    <tr v-for="item in FrenchLeague" :key="item.position">
                       <td class="text-left">{{ item.position }}</td>
                       <td class="text-left">{{ item.team.name}}</td>
                       <td class="text-left">{{ item.playedGames}}</td>
@@ -34,106 +34,22 @@
                     </tr>
                   </tbody>
                 </template>
-              </v-simple-table>
+              </table>
       
       </v-card>
     
-  </v-row>
+ 
 </v-content>
 </template>
 
 
 <script>
-
+import FrenchLeague from '@/assets/data/frenchLeague.json'
 export default {
   data() {
     return {
-   
-   
-      'table': [
-          {
-            'position': '1',
-            "team": {
-                        "id": 674,
-                        "name": "Psg",
-                        "crestURI": null
-                    },
-                    "playedGames": 34,
-                    "won": 26,
-                    "draw": 5,
-                    "lost": 3,
-                    "points": 83,
-                    "goalsFor": 87,
-                    "goalsAgainst": 39,
-                    "goalDifference": 48
-          },
-          {
-            'position': '2',
-            "team": {
-                        "id": 674,
-                        "name": "Lyon",
-                        "crestURI": null
-                    },
-                    "playedGames": 34,
-                    "won": 26,
-                    "draw": 5,
-                    "lost": 3,
-                    "points": 83,
-                    "goalsFor": 87,
-                    "goalsAgainst": 39,
-                    "goalDifference": 48
-          },
-                {
-                    "position": 3,
-                    "team": {
-                        "id": 682,
-                        "name": "Monaco",
-                        "crestURI": null
-                    },
-                    "playedGames": 34,
-                    "won": 22,
-                    "draw": 5,
-                    "lost": 7,
-                    "points": 71,
-                    "goalsFor": 72,
-                    "goalsAgainst": 38,
-                    "goalDifference": 34
-                }
-                ,
-                {
-                    "position": 4,
-                    "team": {
-                        "id": 682,
-                        "name": "Lille",
-                        "crestURI": null
-                    },
-                    "playedGames": 34,
-                    "won": 22,
-                    "draw": 5,
-                    "lost": 7,
-                    "points": 71,
-                    "goalsFor": 72,
-                    "goalsAgainst": 38,
-                    "goalDifference": 34
-                }
-                  ,
-                {
-                    "position":5 ,
-                    "team": {
-                        "id": 682,
-                        "name": "Djion",
-                        "crestURI": null
-                    },
-                    "playedGames": 34,
-                    "won": 22,
-                    "draw": 5,
-                    "lost": 7,
-                    "points": 71,
-                    "goalsFor": 72,
-                    "goalsAgainst": 38,
-                    "goalDifference": 34
-                }
-        ]
+      FrenchLeague : FrenchLeague
+    
     };
   }
 };

@@ -24,10 +24,10 @@ export default {
     return {
       refreshing: false,
       registration: null,
-      snackBtnText: '',
-      snackWithBtnText: '',
-      snackWithButtons: false,
-      timeout: 6000,
+      // snackBtnText: '',
+      // snackWithBtnText: '',
+      // snackWithButtons: false,
+      // timeout: 6000,
       //
     }
   },
